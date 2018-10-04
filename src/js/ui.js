@@ -1,10 +1,10 @@
-function ui_class(x, y, w, h) {
+function ui_class(x, y, w, h, title) {
 
     this.w = w;
     this.h = h;
     this.x = x;
     this.y = y;
-
+    this.title = title;
     this.fake = {
         origin: {
             x: theme.img['left_active'].width,
@@ -19,7 +19,7 @@ function ui_class(x, y, w, h) {
         mode: "active",
         active: {},
         inactive: {},
-        title: "Application"
+        title: this.title
     };
 
 
